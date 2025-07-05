@@ -2,99 +2,122 @@
 const Projects = () => {
   const projects = [
     {
-      title: "AI-Powered Gym CRM System",
-      category: "Full Stack Development",
-      description: "Cloud-hosted CRM system with role-based access control and real-time data synchronization across multiple locations.",
-      technologies: ["Node.js", "Express.js", "MongoDB", "React.js", "AWS"],
-      features: ["Multi-location sync", "Role-based access", "Real-time updates", "Cloud deployment"],
-      link: "#",
-      github: "#"
+      title: "Quick Deployment: Deployment on Finger Tips",
+      year: "2024",
+      description: "Deploy Any Web apps/scripts in seconds with multi-version support, isolated environments, and seamless database spawn & migration. Includes DB management Panels, file manager, CI/CD, and much more—1-second spawn times!",
+      technologies: ["Next.js", "Node.js", "MongoDB", "Redis", "RabbitMQ", "Socket.IO", "Express", "ReverseProxy", "Docker"],
+      image: "/lovable-uploads/853546a6-e40a-4323-a1a9-db5b649b33ac.png", // Using the uploaded image as placeholder
+      category: "Full Stack Development"
     },
     {
-      title: "Smart India Hackathon Winner - Women Safety Analytics",
-      category: "AI/ML Solution",
-      description: "AI-driven safety analytics platform that won the national Smart India Hackathon 2024 competition.",
-      technologies: ["Python", "AI/ML", "NLP", "Data Analytics", "React"],
-      features: ["Real-time analytics", "AI predictions", "Safety alerts", "Data visualization"],
-      link: "#",
-      github: "#"
+      title: "Quick Launch: Effortless Cloud-Based Virtual Environments",
+      year: "2024", 
+      description: "QuickLaunch lets you spin up and manage multiple OSes and apps directly from your browser. With instant OS deployment, and multitasking, it's the perfect solution for researchers, students, and tech enthusiasts",
+      technologies: ["Node.js", "Express.js", "Laravel", "MySQL", "Livewire", "Docker"],
+      image: "/lovable-uploads/853546a6-e40a-4323-a1a9-db5b649b33ac.png", // Using the uploaded image as placeholder
+      category: "Cloud Infrastructure"
     },
     {
-      title: "Gaming Cafe Platform",
-      category: "Mobile Development",
-      description: "React Native application connecting gamers with cafes for tournament registration and discovery.",
-      technologies: ["React Native", "Node.js", "Real-time APIs", "Mobile UI"],
-      features: ["Tournament registration", "Cafe discovery", "Real-time updates", "Multi-device support"],
-      link: "#",
-      github: "#"
+      title: "Raksha – Women Safety & Surveillance System",
+      year: "2024",
+      description: "Built a real-time CCTV surveillance system for women's safety by analyzing CCTV frames and video footage using YOLO and CNN models, achieving 95% accuracy in detecting weapons, suspicious gestures, and gender.",
+      technologies: ["Flutter", "Dart", "MERN Stack", "AI/ML", "YOLO", "CNN", "WebSockets"],
+      image: "/lovable-uploads/853546a6-e40a-4323-a1a9-db5b649b33ac.png", // Using the uploaded image as placeholder
+      category: "AI/ML & Mobile"
     }
   ];
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">
-          Featured <span className="text-cyan-400">Projects</span>
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
+          Check out my latest work
         </h1>
-        <div className="w-20 h-1 bg-cyan-400 mx-auto mb-8"></div>
-        <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-          Showcasing innovative solutions that combine cutting-edge technology with real-world impact
+        <p className="text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
+          I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
         {projects.map((project, index) => (
-          <div key={index} className="bg-slate-800/30 backdrop-blur-sm border border-slate-700 rounded-lg p-8 hover:border-cyan-500/30 transition-all duration-300 group">
-            <div className="mb-6">
-              <span className="inline-block px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-sm border border-cyan-500/30 mb-4">
-                {project.category}
-              </span>
-              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
-                {project.title}
-              </h3>
-              <p className="text-gray-400 leading-relaxed mb-6">
+          <div key={index} className="bg-slate-800/30 backdrop-blur-sm border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500/30 transition-all duration-300 group">
+            {/* Project Image */}
+            <div className="aspect-video bg-slate-700/50 overflow-hidden">
+              <img 
+                src={project.image} 
+                alt={project.title}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            
+            {/* Project Content */}
+            <div className="p-8">
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                  {project.title}
+                </h3>
+                <span className="text-gray-400 font-medium">{project.year}</span>
+              </div>
+
+              <p className="text-gray-400 leading-relaxed mb-6 text-base">
                 {project.description}
               </p>
-            </div>
 
-            <div className="mb-6">
-              <h4 className="text-sm font-semibold text-gray-300 mb-3">Key Features:</h4>
-              <div className="grid grid-cols-2 gap-2">
-                {project.features.map((feature, featureIndex) => (
-                  <div key={featureIndex} className="flex items-center space-x-2">
-                    <div className="w-1.5 h-1.5 bg-green-400 rounded-full"></div>
-                    <span className="text-gray-400 text-sm">{feature}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="mb-6">
-              <div className="flex flex-wrap gap-2">
+              {/* Technology Tags */}
+              <div className="flex flex-wrap gap-2 mb-6">
                 {project.technologies.map((tech, techIndex) => (
-                  <span key={techIndex} className="px-2 py-1 bg-blue-600/20 text-blue-400 rounded text-xs border border-blue-500/30">
+                  <span 
+                    key={techIndex} 
+                    className="px-3 py-1 bg-slate-700/50 text-gray-300 rounded-full text-sm border border-slate-600 hover:border-cyan-500/50 transition-colors"
+                  >
                     {tech}
                   </span>
                 ))}
               </div>
-            </div>
 
-            <div className="flex space-x-4">
-              <a
-                href={project.link}
-                className="flex-1 bg-cyan-600 hover:bg-cyan-500 text-white px-4 py-2 rounded-lg text-center transition-all duration-300 text-sm font-medium"
-              >
-                View Project
-              </a>
-              <a
-                href={project.github}
-                className="flex-1 bg-slate-700 hover:bg-slate-600 text-white px-4 py-2 rounded-lg text-center transition-all duration-300 text-sm font-medium"
-              >
-                GitHub
-              </a>
+              {/* Category Badge */}
+              <div className="flex justify-between items-center">
+                <span className="inline-block px-4 py-2 bg-cyan-500/20 text-cyan-400 rounded-full text-sm border border-cyan-500/30">
+                  {project.category}
+                </span>
+                
+                <div className="flex space-x-3">
+                  <button className="text-gray-400 hover:text-white transition-colors">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clipRule="evenodd" />
+                    </svg>
+                  </button>
+                  <button className="text-gray-400 hover:text-white transition-colors">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clipRule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         ))}
+      </div>
+
+      {/* More Projects Section */}
+      <div className="text-center">
+        <div className="bg-slate-800/30 backdrop-blur-sm border border-slate-700 rounded-2xl p-12">
+          <h3 className="text-3xl font-bold text-white mb-4">More Projects Coming Soon!</h3>
+          <p className="text-gray-400 mb-8 text-lg max-w-2xl mx-auto">
+            I'm constantly working on new innovative projects. Check back regularly or connect with me on GitHub to see my latest work.
+          </p>
+          <a
+            href="https://github.com/ramshekade"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center space-x-3 bg-white text-slate-900 px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl font-semibold text-lg"
+          >
+            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clipRule="evenodd" />
+            </svg>
+            <span>View GitHub</span>
+          </a>
+        </div>
       </div>
     </div>
   );
