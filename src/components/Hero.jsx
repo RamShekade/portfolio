@@ -3,26 +3,34 @@ import { Github, Linkedin, Download } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden pt-16">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-900/20 via-slate-900 to-slate-900"></div>
-      
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        {/* Profile Image */}
-        <div className="mb-12">
-          <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 p-1">
-            <div className="w-full h-full rounded-full bg-slate-800 flex items-center justify-center">
-              <span className="text-6xl font-bold text-cyan-400">RS</span>
-            </div>
-          </div>
-        </div>
+    
+<section className="min-h-screen pt-32 md:pt-36 flex flex-col justify-start items-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
+  <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-900/20 via-slate-900 to-slate-900"></div>
+
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+
+{/* Profile Image */}
+<div className="mb-8">
+  <div className="w-32 h-45 mx-auto mb-6 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 p-1">
+    <div className="w-full h-full rounded-full bg-slate-800 overflow-hidden flex items-center justify-center">
+      <img 
+        src="assets/images/Passport_photo.jpeg" 
+        alt="RS" 
+        className="w-full h-full object-cover"
+      />
+    </div>
+  </div>
+</div>
+
 
         {/* Main Heading */}
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
-          Hi, I'm <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">Ram Shekade</span>
+        <h1 className="text-4xl md:text-7xl font-bold mb-4 text-white">
+          Hi, I'm <span className="text-cyan-400">Ram Shekade</span>
+
         </h1>
         
         {/* Subtitle */}
-        <p className="text-xl md:text-2xl text-gray-300 mb-12">
+        <p  className="text-xl md:text-2xl text-gray-300 mb-12">
           Full Stack Developer & Software Engineer
         </p>
 

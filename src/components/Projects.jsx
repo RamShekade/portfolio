@@ -2,27 +2,27 @@
 const Projects = () => {
   const projects = [
     {
-      title: "Quick Deployment: Deployment on Finger Tips",
-      year: "2024",
-      description: "Deploy Any Web apps/scripts in seconds with multi-version support, isolated environments, and seamless database spawn & migration. Includes DB management Panels, file manager, CI/CD, and much more—1-second spawn times!",
-      technologies: ["Next.js", "Node.js", "MongoDB", "Redis", "RabbitMQ", "Socket.IO", "Express", "ReverseProxy", "Docker"],
-      image: "/lovable-uploads/853546a6-e40a-4323-a1a9-db5b649b33ac.png", // Using the uploaded image as placeholder
-      category: "Full Stack Development"
+      title: "VoxGenie",
+      year: "2025",
+      description: "Enterprise-grade conversational AI platform for India's P2P lending sector, enabling human-like multilingual voice interactions. Built to streamline user education, automate onboarding, and improve customer experience in financial services.",
+      technologies: ["Python", "Flutter", "Qdrant", "AWS", "RAG", "Socket.IO", "Langchain"],
+      video: "/assets/videos/Raksha.mp4", // Using the uploaded image as placeholder
+      category: "AI/ML & Mobile"
     },
     {
-      title: "Quick Launch: Effortless Cloud-Based Virtual Environments",
-      year: "2024", 
-      description: "QuickLaunch lets you spin up and manage multiple OSes and apps directly from your browser. With instant OS deployment, and multitasking, it's the perfect solution for researchers, students, and tech enthusiasts",
-      technologies: ["Node.js", "Express.js", "Laravel", "MySQL", "Livewire", "Docker"],
-      image: "/lovable-uploads/853546a6-e40a-4323-a1a9-db5b649b33ac.png", // Using the uploaded image as placeholder
-      category: "Cloud Infrastructure"
+      title: "VyomAssist",
+      year: "2025", 
+      description: "Banking assistance application with AI-powered chatbot functionality and facial recognition authentication. Reduced customer support response time by 50%.",
+      technologies: ["MERN Stack", "Flutter", "BERT", "Langchain", "Socket.io", "AI/ML","Deepface"],
+      video: "/assets/videos/VyomAssist.mp4", // Using the uploaded image as placeholder
+      category: "Financial Product"
     },
     {
       title: "Raksha – Women Safety & Surveillance System",
       year: "2024",
       description: "Built a real-time CCTV surveillance system for women's safety by analyzing CCTV frames and video footage using YOLO and CNN models, achieving 95% accuracy in detecting weapons, suspicious gestures, and gender.",
       technologies: ["Flutter", "Dart", "MERN Stack", "AI/ML", "YOLO", "CNN", "WebSockets"],
-      image: "/lovable-uploads/853546a6-e40a-4323-a1a9-db5b649b33ac.png", // Using the uploaded image as placeholder
+      video: "/assets/videos/Raksha.mp4", // Using the uploaded image as placeholder
       category: "AI/ML & Mobile"
     }
   ];
@@ -42,13 +42,17 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div key={index} className="bg-slate-800/30 backdrop-blur-sm border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500/30 transition-all duration-300 group">
             {/* Project Image */}
-            <div className="aspect-video bg-slate-700/50 overflow-hidden">
-              <img 
-                src={project.image} 
-                alt={project.title}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
+           <div className="aspect-video bg-slate-700/50 overflow-hidden">
+  <video
+    src={project.video}
+    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+    autoPlay
+    loop
+    muted
+    playsInline
+  />
+</div>
+
             
             {/* Project Content */}
             <div className="p-8">
