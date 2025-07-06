@@ -6,7 +6,7 @@ const Projects = () => {
       year: "2025",
       description: "Enterprise-grade conversational AI platform for India's P2P lending sector, enabling human-like multilingual voice interactions. Built to streamline user education, automate onboarding, and improve customer experience in financial services.",
       technologies: ["Python", "Flutter", "Qdrant", "AWS", "RAG", "Socket.IO", "Langchain"],
-      video: "/assets/videos/Raksha.mp4", // Using the uploaded image as placeholder
+      video: "https://pub-943749f23d3d4fb9a64555a5365b5a53.r2.dev/Raksha%20-%20Made%20with%20Clipchamp_1746607279585.mp4", // Using the uploaded image as placeholder
       category: "AI/ML & Mobile"
     },
     {
@@ -14,7 +14,7 @@ const Projects = () => {
       year: "2025", 
       description: "Banking assistance application with AI-powered chatbot functionality and facial recognition authentication. Reduced customer support response time by 50%.",
       technologies: ["MERN Stack", "Flutter", "BERT", "Langchain", "Socket.io", "AI/ML","Deepface"],
-      video: "/assets/videos/VyomAssist.mp4", // Using the uploaded image as placeholder
+      video: "https://pub-943749f23d3d4fb9a64555a5365b5a53.r2.dev/VyomAssist.mp4", // Using the uploaded image as placeholder
       category: "Financial Product"
     },
     {
@@ -22,7 +22,7 @@ const Projects = () => {
       year: "2024",
       description: "Built a real-time CCTV surveillance system for women's safety by analyzing CCTV frames and video footage using YOLO and CNN models, achieving 95% accuracy in detecting weapons, suspicious gestures, and gender.",
       technologies: ["Flutter", "Dart", "MERN Stack", "AI/ML", "YOLO", "CNN", "WebSockets"],
-      video: "/assets/videos/Raksha.mp4", // Using the uploaded image as placeholder
+      video: "https://pub-943749f23d3d4fb9a64555a5365b5a53.r2.dev/Raksha%20-%20Made%20with%20Clipchamp_1746607279585.mp4", // Using the uploaded image as placeholder
       category: "AI/ML & Mobile"
     }
   ];
