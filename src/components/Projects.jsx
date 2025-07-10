@@ -24,6 +24,14 @@ const Projects = () => {
       technologies: ["Flutter", "Dart", "MERN Stack", "AI/ML", "YOLO", "CNN", "WebSockets"],
       video: "https://pub-943749f23d3d4fb9a64555a5365b5a53.r2.dev/Raksha%20-%20Made%20with%20Clipchamp_1746607279585.mp4", // Using the uploaded image as placeholder
       category: "AI/ML & Mobile"
+    },
+    {
+      title: "InfluencerHub",
+      year: "2024",
+      description: "Centralized social media management platform with real-time analytics and AI-powered content generation. Amplified campaign effectiveness by 35%.",
+      technologies: ["React", "OAuth2.O", "MERN Stack", "AI/ML", "Youtube Data API"],
+      video: "https://pub-943749f23d3d4fb9a64555a5365b5a53.r2.dev/InfluencerHub.mp4", // Using the uploaded image as placeholder
+      category: "Analytics & Social media"
     }
   ];
 

@@ -8,17 +8,27 @@ const Hero = () => {
       
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         {/* Profile Image */}
-        <div className="mb-12">
-          <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 p-1">
-            <div className="w-full h-full rounded-full bg-slate-800 flex items-center justify-center">
-              <span className="text-6xl font-bold text-cyan-400">RS</span>
-            </div>
-          </div>
-        </div>
+       <div className="mb-8" style={{marginTop:"80px"}}>
+  <div
+    className="mx-auto mb-4 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 p-1"
+    style={{ width: "220px", height: "220px" }} // manual size
+  >
+    <div
+      className="w-full h-full rounded-full bg-slate-800 flex items-center justify-center overflow-hidden"
+    >
+      <img
+        src="https://pub-943749f23d3d4fb9a64555a5365b5a53.r2.dev/Passport_photo.jpeg"
+        alt="Ram Shekade"
+        className="w-full h-full object-cover rounded-full"
+      />
+    </div>
+  </div>
+</div>
+
 
         {/* Main Heading */}
         <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
-          Hi, I'm <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">Ram Shekade</span>
+          Hi, I'm <span className="cyan">Ram Shekade</span>
         </h1>
         
         {/* Subtitle */}
